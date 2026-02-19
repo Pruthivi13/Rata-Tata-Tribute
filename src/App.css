@@ -1,0 +1,221 @@
+body {
+  background-color: #212529;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tata-img {
+  border-radius: 8px;
+  filter: drop-shadow(#494848da -1rem -1rem 20px);
+}
+
+p {
+  font-family: "Della Respira", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+}
+
+.bold {
+  font-family: "Della Respira", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: large;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #212529;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.quote img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.divider {
+  border: dotted #c152fd 10px;
+  border-bottom: none;
+  width: 70%;
+  margin: auto;
+}
+
+.border-custom {
+  width: 80%;
+  margin: auto;
+}
+
+.achievement {
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Spline Hero Section */
+.spline-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #111317;
+}
+
+.spline-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.spline-hero-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(17, 19, 23, 0.3) 0%,
+    rgba(17, 19, 23, 0.85) 70%,
+    rgba(17, 19, 23, 1) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.spline-hero-bg .spline-container {
+  width: 100%;
+  height: 100%;
+}
+
+.spline-hero-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+
+.spline-hero-title {
+  font-family: "Syncopate", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.5em;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.spline-hero-name {
+  font-family: "Syncopate", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+}
+
+.spline-hero-subtitle {
+  font-family: "Della Respira", serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.7);
+  margin-top: 1rem;
+  letter-spacing: 0.2em;
+}
+
+.spline-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+  .spline-hero {
+    height: 70vh;
+  }
+
+  .spline-hero-title {
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+  }
+
+  .spline-hero-name {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+  }
+
+  .spline-hero-subtitle {
+    font-size: 0.95rem;
+    letter-spacing: 0.15em;
+  }
+
+  .hero .row {
+    margin: 0 !important;
+    padding: 1.5rem !important;
+  }
+
+  .bio {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .bio h1 {
+    font-size: 1.75rem;
+  }
+
+  .bio .col-lg-6 {
+    padding: 0;
+  }
+
+  .divider {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .spline-hero {
+    height: 60vh;
+  }
+
+  .spline-hero-title {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+  }
+
+  .spline-hero-name {
+    font-size: 1.5rem;
+  }
+
+  .spline-hero-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .hero .row {
+    padding: 1rem !important;
+  }
+}
